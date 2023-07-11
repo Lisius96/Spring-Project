@@ -3,12 +3,8 @@ package org.example.springsecurityclient.Controller;
 import org.example.springsecurityclient.Entity.User;
 import org.example.springsecurityclient.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping(path="/demo")
@@ -17,6 +13,7 @@ public class MainController {
     @Autowired
     private UserRepository userRepository;
 
+    @PostMapping(path="/add")
     public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam String email, @RequestParam String password){
         User user=new User();
         user.setName(name);
