@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Aggiunto collegamento database">
+    <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Modifiche MainController class">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "5ec1c46c0e99c29ca964a6ce719dcaca"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5ec1c46c0e99c29ca964a6ce719dcaca&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SpringSecurityClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-security-client" />
@@ -65,7 +72,9 @@
       <option name="presentableId" value="Default" />
       <updated>1689064221928</updated>
       <workItem from="1689064224831" duration="4920000" />
-      <workItem from="1689102834427" duration="998000" />
+      <workItem from="1689102834427" duration="1169000" />
+      <workItem from="1689148676159" duration="16126000" />
+      <workItem from="1689233766024" duration="10391000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1689064783069</created>
@@ -88,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689103167934</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modifiche MainController class">
+      <created>1689103970350</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689103970350</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Aggiunto collegamento database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto collegamento database" />
+    <MESSAGE value="Modifiche MainController class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifiche MainController class" />
   </component>
 </project>
