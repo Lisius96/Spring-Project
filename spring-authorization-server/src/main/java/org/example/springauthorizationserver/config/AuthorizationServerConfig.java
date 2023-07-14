@@ -1,24 +1,27 @@
-package com.example.springauthserver.Config;
-
+package org.example.springauthorizationserver.config;
 
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 import org.springframework.security.oauth2.core.oidc.OidcScopes;
 import org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
-import org.springframework.security.oauth2.server.authorization.config.ProviderSettings;
+import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
+import org.springframework.security.oauth2.server.authorization.settings.AuthorizationServerSettings;
+import org.springframework.security.oauth2.server.authorization.settings.ClientSettings;
 import org.springframework.security.web.SecurityFilterChain;
 
 import java.security.KeyPair;
@@ -27,44 +30,46 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 import java.util.UUID;
 
-/*The properties we're configuring are:
-    Client ID – Spring will use it to identify which client is trying to access the resource
-    Client secret code – a secret known to the client and server that provides trust between the two
-    Authentication method – in our case, we'll use basic authentication, which is just a username
-        and password
-    Authorization grant type – we want to allow the client to generate both an authorization code
-        and a refresh token
-    Redirect URI – the client will use it in a redirect-based flow
-    Scope – this parameter defines authorizations that the client may have. In our case, we'll
-        have the required OidcScopes.OPENID and our custom one, "articles.read"
- */
-
+//Implementazione standard dell'authorization server, riguarda come l'auth server dovrebbe funzionare
 @Configuration(proxyBeanMethods = false)
-public class AuthServerConfig {
+@EnableWebSecurity
+public class AuthorizationServerConfig {
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Bean
     @Order(Ordered.HIGHEST_PRECEDENCE)
     public SecurityFilterChain authServerSecurityFilterChain(HttpSecurity http) throws Exception {
         OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http);
-        return http.formLogin(Customizer.withDefaults()).build();
+        return http.formLogin(Customizer.withDefaults()).build(); //Customizziamo il formLogin con la configurazione di default per Oauth2
     }
 
-    ///just one client registered this way:
+
+    /*Implementazione standard per registrare il client presso l'authorization server. In questo caso abbiamo una creazione statica,
+    dato che stiamo dando l'authorizzazione al solo client a nostra disposizione che è spring-security-client.
+     */
+
     @Bean
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
-                .clientId("photo-service-client") //if the client is the photo service one
-                .clientSecret("{noop}secret")
+                .clientId("api-client") //rappresenta il nome del client, quello segnato nel file properties.yml
+                .clientSecret(passwordEncoder.encode("secret")) //Client password
+                //Diamo le autorizzazioni ecc per connettere il client all'authorization server
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-                .redirectUri("http://127.0.0.1:8080/login/oauth2/code/photo-service-client-oidc")
+                //Questi due url rappresentano il punto in cui si viene reindirizzati  post autorizzazione e autenticazione
+                .redirectUri("http://127.0.0.1:8080/login/oauth2/code/api-client-oidc")
                 .redirectUri("http://127.0.0.1:8080/authorized")
                 .scope(OidcScopes.OPENID)
-                .scope("photo.print")
+                .scope("api.read")
+                //abilito il consenso, l'authorization server deve dare indietro il consenso al client
+                .clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
                 .build();
 
-        return new InMemoryRegisteredClientRepository(registeredClient);
+
+        return new InMemoryRegisteredClientRepository(registeredClient); //registro il client è in-memory di questo Authorization server
     }
 
     @Bean
@@ -74,6 +79,8 @@ public class AuthServerConfig {
         return (jwkSelector, securityContext) -> jwkSelector.select(jwkSet);
     }
 
+
+    //Metodi standard per la generazione di chiavi pubbliche e private
     private static RSAKey generateRsa() {
         KeyPair keyPair = generateRsaKey();
         RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();
@@ -96,10 +103,13 @@ public class AuthServerConfig {
         return keyPair;
     }
 
+
+    //Authorization provider
     @Bean
-    public ProviderSettings providerSettings() {
-        return ProviderSettings.builder()
-                .issuer("http://auth-server:9000")
+    public AuthorizationServerSettings providerSettings() {
+        return AuthorizationServerSettings.builder()
+                .issuer("http://auth-server:9000") //porta 9000 come quella specificata nel file properties.yml
                 .build();
     }
+
 }

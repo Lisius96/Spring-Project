@@ -4,13 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Aggiunto collegamento database">
-      <change afterPath="$PROJECT_DIR$/spring-auth-server/src/main/java/com/example/springauthserver/Config/AuthServerConfig.java" afterDir="false" />
+    <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Configurazione Autenticazione client">
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/SpringAuthorizationServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/DefaultSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-authorization-server/src/test/java/org/example/springauthorizationserver/SpringAuthorizationServerApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/src/main/java/com/example/springauthserver/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/src/main/java/com/example/springauthserver/Config/AuthServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/src/main/java/com/example/springauthserver/Config/DefaultSec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-auth-server/src/test/java/com/example/springauthserver/ApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,22 +78,30 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "spring.configuration.checksum": "5ec1c46c0e99c29ca964a6ce719dcaca",
-    "vue.rearranger.settings.migration": "true"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "a55c3fe09de41f76536769d855875e34"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sofia Gavanelli\IdeaProjects\Spring-Project" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.springauthorizationserver.repository" />
+      <recent name="org.example.springauthorizationserver.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringSecurityClientApplication">
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring-auth-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springauthserver.Application" />
+    <configuration name="SpringAuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-authorization-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.springauthorizationserver.SpringAuthorizationServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,7 +125,8 @@
       <workItem from="1689064224831" duration="4920000" />
       <workItem from="1689102834427" duration="1169000" />
       <workItem from="1689148676159" duration="16126000" />
-      <workItem from="1689233766024" duration="10391000" />
+      <workItem from="1689233766024" duration="14290000" />
+      <workItem from="1689317977848" duration="6516000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1689064783069</created>
@@ -121,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689103970350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Configurazione Autenticazione client">
+      <created>1689254108716</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689254108716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +184,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Aggiunto collegamento database" />
     <MESSAGE value="Modifiche MainController class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifiche MainController class" />
+    <MESSAGE value="Configurazione Autenticazione client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configurazione Autenticazione client" />
   </component>
 </project>
