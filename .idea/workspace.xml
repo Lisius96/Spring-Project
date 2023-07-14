@@ -52,26 +52,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "jbr-17",
-    "last_opened_file_path": "C:/Users/Sofia Gavanelli/IdeaProjects/Spring-Project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "6d306c426690d2f686c2b9962eea04c2",
+    "spring.configuration.checksum": "5ec1c46c0e99c29ca964a6ce719dcaca",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -105,13 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1689064221928</updated>
       <workItem from="1689064224831" duration="4920000" />
-      <workItem from="1689102834427" duration="998000" />
-      <workItem from="1689151348401" duration="2706000" />
-      <workItem from="1689154165777" duration="1298000" />
-      <workItem from="1689156256529" duration="663000" />
-      <workItem from="1689167781520" duration="5318000" />
-      <workItem from="1689236992748" duration="3660000" />
-      <workItem from="1689241606502" duration="1133000" />
+      <workItem from="1689102834427" duration="1169000" />
+      <workItem from="1689148676159" duration="16126000" />
+      <workItem from="1689233766024" duration="10391000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1689064783069</created>
@@ -134,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689103167934</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modifiche MainController class">
+      <created>1689103970350</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689103970350</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Aggiunto collegamento database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto collegamento database" />
+    <MESSAGE value="Modifiche MainController class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifiche MainController class" />
   </component>
 </project>
