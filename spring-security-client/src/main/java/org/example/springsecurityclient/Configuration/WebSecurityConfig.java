@@ -43,7 +43,6 @@ public class WebSecurityConfig {
         return http.build();*/
 
         http
-
                 //.securityMatcher(antMatcher("/api/**"))
                 /*.authorizeHttpRequests(authorize -> authorize.requestMatchers(WHITE_LIST_URLS).permitAll()
                         .anyRequest().authenticated()
