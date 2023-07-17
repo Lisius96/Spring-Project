@@ -21,7 +21,7 @@ spring:
             client-id: api-client
             client-secret: secret
             authorization-grant-type: authorization_code
-            redirect-uri: "http://127.0.0.1:8080/login/oauth2/code/{registrationId}" #registrationId è api-client-oidc
+            redirect-uri: "http://127.0.0.1:8080/login/oauth2/code/{registrationId}" #registrationId e' api-client-oidc
             scope: openid
             client-name: api-client-oidc
           api-client-authorization-code:
@@ -29,7 +29,7 @@ spring:
             client-id: api-client
             client-secret: secret
             authorization-grant-type: authorization_code
-            redirect-uri: "http://127.0.0.1:8080/authorized" #uri di reindirizzamento una volta che il client è autenticato
+            redirect-uri: "http://127.0.0.1:8080/authorized" #uri di reindirizzamento una volta che il client e' autenticato
             scope: api.read
             client-name: api-client-authorization-code
         provider:
