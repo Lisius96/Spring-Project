@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Configurazione Autenticazione client">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-resource-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-resource-server/src/main/java/com/example/springresourceserver/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/src/main/java/com/example/springresourceserver/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-resource-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebClientConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,38 +56,59 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2SQ1v0ixcRvB0qGGQ0nQhM58vtA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "e39376a0b8debae7241e7b3d90e021ec",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sofia Gavanelli/IdeaProjects/Spring-Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e39376a0b8debae7241e7b3d90e021ec&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sofia Gavanelli\IdeaProjects\Spring-Project" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.springauthorizationserver.repository" />
       <recent name="org.example.springauthorizationserver.entity" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringAuthorizationServerApplication">
     <configuration name="SpringAuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-authorization-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.springauthorizationserver.SpringAuthorizationServerApplication" />
@@ -112,6 +147,35 @@
       <workItem from="1689430674861" duration="8338000" />
       <workItem from="1689584608596" duration="503000" />
       <workItem from="1689585123942" duration="1241000" />
+      <workItem from="1689672061674" duration="1777000" />
+      <workItem from="1689691888576" duration="1696000" />
+      <workItem from="1689694237890" duration="1289000" />
+      <workItem from="1689696615632" duration="1074000" />
+      <workItem from="1689697710792" duration="533000" />
+      <workItem from="1689698262421" duration="2828000" />
+      <workItem from="1689749776804" duration="1262000" />
+      <workItem from="1689751055397" duration="1613000" />
+      <workItem from="1689752932347" duration="997000" />
+      <workItem from="1689753949547" duration="919000" />
+      <workItem from="1689754884235" duration="1968000" />
+      <workItem from="1689762875921" duration="410000" />
+      <workItem from="1689763300502" duration="2536000" />
+      <workItem from="1689765862574" duration="1437000" />
+      <workItem from="1689767319212" duration="1994000" />
+      <workItem from="1689769347681" duration="853000" />
+      <workItem from="1689774527251" duration="725000" />
+      <workItem from="1689775271107" duration="250000" />
+      <workItem from="1689775535231" duration="1808000" />
+      <workItem from="1689777363959" duration="1286000" />
+      <workItem from="1689778668828" duration="5778000" />
+      <workItem from="1689793246782" duration="761000" />
+      <workItem from="1689795617174" duration="1292000" />
+      <workItem from="1689844236892" duration="1944000" />
+      <workItem from="1689865253866" duration="2612000" />
+      <workItem from="1689876215086" duration="875000" />
+      <workItem from="1689877108860" duration="834000" />
+      <workItem from="1689881928027" duration="2297000" />
+      <workItem from="1689886386642" duration="1226000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1689064783069</created>
@@ -171,5 +235,9 @@
     <MESSAGE value="Modifiche MainController class" />
     <MESSAGE value="Configurazione Autenticazione client" />
     <option name="LAST_COMMIT_MESSAGE" value="Configurazione Autenticazione client" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

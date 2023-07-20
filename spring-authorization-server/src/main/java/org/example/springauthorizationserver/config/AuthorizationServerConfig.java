@@ -24,15 +24,17 @@ import org.springframework.security.oauth2.server.authorization.settings.Authori
 import org.springframework.security.oauth2.server.authorization.settings.ClientSettings;
 import org.springframework.security.web.SecurityFilterChain;
 
+
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 import java.util.UUID;
+import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
 
 //Implementazione standard dell'authorization server, riguarda come l'auth server dovrebbe funzionare
 @Configuration(proxyBeanMethods = false)
-@EnableWebSecurity
+//@EnableWebSecurity
 public class AuthorizationServerConfig {
 
     @Autowired
@@ -42,6 +44,7 @@ public class AuthorizationServerConfig {
     @Order(Ordered.HIGHEST_PRECEDENCE)
     public SecurityFilterChain authServerSecurityFilterChain(HttpSecurity http) throws Exception {
         OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http);
+
         return http.formLogin(Customizer.withDefaults()).build(); //Customizziamo il formLogin con la configurazione di default per Oauth2
     }
 
@@ -111,5 +114,6 @@ public class AuthorizationServerConfig {
                 .issuer("http://auth-server:9000") //porta 9000 come quella specificata nel file properties.yml
                 .build();
     }
+
 
 }

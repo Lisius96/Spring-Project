@@ -9,13 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
+        <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <modules>
-        <module>spring-security-client</module>
         <module>spring-authorization-server</module>
+        <module>spring-security-client</module>
         <module>spring-resource-server</module>
     </modules>
 </project>

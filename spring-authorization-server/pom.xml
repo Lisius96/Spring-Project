@@ -54,6 +54,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-oauth2-authorization-server</artifactId>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -69,7 +70,6 @@
 						</exclude>
 					</excludes>
 				</configuration>
-				<version>2.4.1</version>
 			</plugin>
 		</plugins>
 	</build>
