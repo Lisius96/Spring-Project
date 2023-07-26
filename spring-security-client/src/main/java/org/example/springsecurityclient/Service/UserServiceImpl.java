@@ -129,6 +129,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean checkIfValidOldPassword(User user, String oldPassword) {
-        return passwordEncoder.matches(oldPassword, user.getPassword());
+        return passwordEncoder.matches(oldPassword, user.getPassword()); //confrontiamo la vecchia password con quella inserita dall'utente
     }
 }

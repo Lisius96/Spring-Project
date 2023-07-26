@@ -10,7 +10,6 @@ import org.example.springsecurityclient.Model.UserModel;
 import org.example.springsecurityclient.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -87,7 +86,7 @@ public class RegistrationController {
     @PostMapping("/changePassword")
     public String changePassword(@RequestBody PasswordModel passwordModel){
         User user = userService.findUserByEmail(passwordModel.getEmail());
-        if(!userService.checkIfValidOldPassword(user,passwordModel.getOldPassword())) {
+        if(!userService.checkIfValidOldPassword(user,passwordModel.getOldPassword())) { //confronto implementato nella classe UserServiceImpl
             return "Invalid Old Password";
         }
         //Save New Password

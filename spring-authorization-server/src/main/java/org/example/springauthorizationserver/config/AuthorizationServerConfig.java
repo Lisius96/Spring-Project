@@ -31,7 +31,7 @@ import java.util.UUID;
 
 //Implementazione standard dell'authorization server, riguarda come l'auth server dovrebbe funzionare
 @Configuration(proxyBeanMethods = false)
-public class AuthorizationServerConfig {
+public class AuthorizationServerConfig { //configurazione standard per l'authorization server
 
 
     @Autowired
@@ -40,16 +40,18 @@ public class AuthorizationServerConfig {
     @Bean
     @Order(Ordered.HIGHEST_PRECEDENCE)
     public SecurityFilterChain authServerSecurityFilterChain(HttpSecurity http) throws Exception {
+        //applichiamo la sicurezza di default ovvero aggiungiamo tutte le apis di default alla nostra configurazione
         OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http);
 
         return http.formLogin(Customizer.withDefaults()).build();
     }
 
+    //Configurazione base per la registrazione del client
     @Bean
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
-                .clientId("api-client")
-                .clientSecret(passwordEncoder.encode("secret"))
+                .clientId("api-client") //nome client
+                .clientSecret(passwordEncoder.encode("secret")) //client password
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.PASSWORD)
@@ -62,9 +64,11 @@ public class AuthorizationServerConfig {
                 .build();
 
 
+        //In memory dell'authorization server
         return new InMemoryRegisteredClientRepository(registeredClient);
     }
 
+    //configurazione standard per la generazione di chiave pubblica e privata
     @Bean
     public JWKSource<SecurityContext> jwkSource() {
         RSAKey rsaKey = generateRsa();

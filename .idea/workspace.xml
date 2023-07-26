@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Configurazione Autenticazione client">
+    <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Cambiata versione">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-authorization-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/AuthorizationServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/DefaultSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/DefaultSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-resource-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-resource-server/src/main/java/com/example/springresourceserver/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/src/main/java/com/example/springresourceserver/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-resource-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebClientConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/PasswordResetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/PasswordResetToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/VerificationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/VerificationToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Event/Listener/RegistrationCompleteEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Event/Listener/RegistrationCompleteEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/VerificationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/VerificationTokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +168,7 @@
       <workItem from="1690051735374" duration="1518000" />
       <workItem from="1690130246535" duration="1585000" />
       <workItem from="1690200210999" duration="7404000" />
+      <workItem from="1690358182293" duration="7660000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1689064783069</created>
@@ -223,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689254108716</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Cambiata versione">
+      <option name="closed" value="true" />
+      <created>1690358348822</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690358348822</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +235,8 @@
     <MESSAGE value="Aggiunto collegamento database" />
     <MESSAGE value="Modifiche MainController class" />
     <MESSAGE value="Configurazione Autenticazione client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configurazione Autenticazione client" />
+    <MESSAGE value="Cambiata versione" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambiata versione" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -20,7 +20,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class CustomUserDetailsService implements UserDetailsService {
+public class CustomUserDetailsService implements UserDetailsService { //classe custom per prendere il nostro utente dal db
 
     @Autowired
     private UserRepository userRepository;
@@ -30,10 +30,11 @@ public class CustomUserDetailsService implements UserDetailsService {
         return new BCryptPasswordEncoder(11);
     }
 
+    //prendiamo l'utente dal database cercandolo tramite email (il nostro username).
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepository.findByEmail(email);
-        if(user == null) {
+        if(user == null) { //verifichiamo se l'utente esiste. Se non esiste lanciamo l'eccezione
             throw  new UsernameNotFoundException("No User Found");
         }
         return new org.springframework.security.core.userdetails.User(
@@ -47,6 +48,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         );
     }
 
+    //metodo che crea la lista di GrantedAuthorities in base ai roles e restituisce le authorities
     private Collection<? extends GrantedAuthority> getAuthorities(List<String> roles) {
         List<GrantedAuthority>  authorities = new ArrayList<>();
         for(String role: roles) {

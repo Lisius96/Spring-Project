@@ -21,7 +21,7 @@ public class DefaultSecurityConfig {
         http.authorizeRequests(authorizeRequests ->
                         authorizeRequests.anyRequest().authenticated()
                 )
-                .formLogin(Customizer.withDefaults());
+                .formLogin(Customizer.withDefaults()); //form login di default
         return http.build();
     }
 

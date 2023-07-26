@@ -19,7 +19,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class HelloController {
 
     @Autowired
-    private WebClient webClient;
+    private WebClient webClient; //utilizzato per ottenere gli utenti dal resource server
 
     @GetMapping("/api/hello")
     public String hello(Principal principal) {
