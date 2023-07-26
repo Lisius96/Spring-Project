@@ -1,6 +1,6 @@
 package org.example.springsecurityclient.Entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,7 +11,6 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 public class PasswordResetToken {
-
     //Expiration time 10 miutes
     private static  final int EXPIRATION_TIME = 10;
     @Id

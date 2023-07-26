@@ -13,14 +13,12 @@ public class ResourceServerConfig {
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .authorizeHttpRequests(authz -> authz
-                .requestMatchers("/api/**").hasAuthority("SCOPE_api.read")
-                )
-                .oauth2ResourceServer((oauth2) -> oauth2
-                        .jwt(Customizer.withDefaults())
-                );
-
+                .authorizeRequests()
+                .mvcMatchers("/api/**")
+                .access("hasAuthority('SCOPE_api.read')")
+                .and()
+                .oauth2ResourceServer()
+                .jwt();
         return http.build();
     }
-
 }

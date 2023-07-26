@@ -16,7 +16,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
@@ -27,6 +27,7 @@ public class UserServiceImpl implements UserService{
     @Autowired
     private PasswordResetTokenRepository passwordResetTokenRepository;
 
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Override
@@ -36,7 +37,7 @@ public class UserServiceImpl implements UserService{
         user.setFirstName(userModel.getFirstName());
         user.setLastName(userModel.getLastName());
         user.setRole("USER");
-        user.setPassword(passwordEncoder.encode(userModel.getPassword()));
+        user.setPassword(passwordEncoder.encode(userModel.getPassword())); //conversione password plain inserita dall'utente in una cifrata
 
         userRepository.save(user);
         return user;
@@ -44,18 +45,21 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void saveVerificationTokenForUser(String token, User user) {
-        VerificationToken verificationToken = new VerificationToken(user, token);
+        VerificationToken verificationToken
+                = new VerificationToken(user, token);
 
         verificationTokenRepository.save(verificationToken);
     }
 
     @Override
     public String validateVerificationToken(String token) {
-        VerificationToken verificationToken = verificationTokenRepository.findByToken(token);
+        VerificationToken verificationToken
+                = verificationTokenRepository.findByToken(token);
 
         if (verificationToken == null) {
             return "invalid";
         }
+
         User user = verificationToken.getUser();
         Calendar cal = Calendar.getInstance();
 
@@ -72,7 +76,8 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public VerificationToken generateNewVerificationToken(String oldToken) {
-        VerificationToken verificationToken = verificationTokenRepository.findByToken(oldToken);
+        VerificationToken verificationToken
+                = verificationTokenRepository.findByToken(oldToken);
         verificationToken.setToken(UUID.randomUUID().toString());
         verificationTokenRepository.save(verificationToken);
         return verificationToken;
@@ -85,13 +90,15 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void createPasswordResetTokenForUser(User user, String token) {
-        PasswordResetToken passwordResetToken = new PasswordResetToken(user,token);
+        PasswordResetToken passwordResetToken
+                = new PasswordResetToken(user,token);
         passwordResetTokenRepository.save(passwordResetToken);
     }
 
     @Override
     public String validatePasswordResetToken(String token) {
-        PasswordResetToken passwordResetToken = passwordResetTokenRepository.findByToken(token);
+        PasswordResetToken passwordResetToken
+                = passwordResetTokenRepository.findByToken(token);
 
         if (passwordResetToken == null) {
             return "invalid";

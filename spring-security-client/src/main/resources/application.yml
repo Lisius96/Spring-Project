@@ -3,11 +3,10 @@ server:
 
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/user-registration
+    url: jdbc:mysql://localhost:3306/user_registration
     username: root
-    #password: ellie&joel
-    password: SofiaMySQL
+    password: ellie&joel
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
     hibernate:
@@ -15,13 +14,13 @@ spring:
   security:
     oauth2:
       client:
-        registration:   #rappresenta il nome del client
-          api-client-oidc: #nome client
+        registration:
+          api-client-oidc:
             provider: spring
             client-id: api-client
             client-secret: secret
             authorization-grant-type: authorization_code
-            redirect-uri: "http://127.0.0.1:8080/login/oauth2/code/{registrationId}" #registrationId e' api-client-oidc
+            redirect-uri: "http://127.0.0.1:8080/login/oauth2/code/{registrationId}"
             scope: openid
             client-name: api-client-oidc
           api-client-authorization-code:
@@ -29,9 +28,9 @@ spring:
             client-id: api-client
             client-secret: secret
             authorization-grant-type: authorization_code
-            redirect-uri: "http://127.0.0.1:8080/authorized" #uri di reindirizzamento una volta che il client e' autenticato
+            redirect-uri: "http://127.0.0.1:8080/authorized"
             scope: api.read
             client-name: api-client-authorization-code
         provider:
           spring:
-            issuer-uri: http://auth-server:9000   #http://127.0.0.1:9000 #
+            issuer-uri: http://auth-server:9000

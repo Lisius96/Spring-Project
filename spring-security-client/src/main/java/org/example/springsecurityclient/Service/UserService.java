@@ -7,7 +7,6 @@ import org.example.springsecurityclient.Model.UserModel;
 import java.util.Optional;
 
 public interface UserService {
-
     User registerUser(UserModel userModel);
 
     void saveVerificationTokenForUser(String token, User user);
@@ -28,5 +27,3 @@ public interface UserService {
 
     boolean checkIfValidOldPassword(User user, String oldPassword);
 }
-
-

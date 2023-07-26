@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="158b07b9-fb7c-452d-b27e-12d571b76284" name="Changes" comment="Configurazione Autenticazione client">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-authorization-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/DefaultSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/config/DefaultSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/java/org/example/springauthorizationserver/service/CustomUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-authorization-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-authorization-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-resource-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-resource-server/src/main/java/com/example/springresourceserver/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-resource-server/src/main/java/com/example/springresourceserver/config/ResourceServerConfig.java" afterDir="false" />
@@ -22,6 +22,14 @@
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Configuration/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/PasswordResetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/PasswordResetToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/VerificationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Entity/VerificationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Event/Listener/RegistrationCompleteEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Event/Listener/RegistrationCompleteEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/VerificationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Repository/VerificationTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/org/example/springsecurityclient/Service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +87,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sofia Gavanelli/IdeaProjects/Spring-Project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aless/IdeaProjects/Spring-Project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -87,7 +95,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;e39376a0b8debae7241e7b3d90e021ec&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -108,7 +116,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringAuthorizationServerApplication">
+  <component name="RunManager" selected="Spring Boot.SpringSecurityClientApplication">
     <configuration name="SpringAuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-authorization-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.springauthorizationserver.SpringAuthorizationServerApplication" />
@@ -176,6 +184,9 @@
       <workItem from="1689877108860" duration="834000" />
       <workItem from="1689881928027" duration="2297000" />
       <workItem from="1689886386642" duration="1226000" />
+      <workItem from="1690051735374" duration="1518000" />
+      <workItem from="1690130246535" duration="1585000" />
+      <workItem from="1690200210999" duration="7404000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1689064783069</created>

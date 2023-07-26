@@ -2,8 +2,15 @@ server:
   port: 8090
 
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_registration
+    username: root
+    password: ellie&joel
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
   security:
     oauth2:
-      resource-server:
+      resourceserver:
         jwt:
-          issuer-uri: http://auth-server:9000 #http://127.0.0.1:9000 #
+          issuer-uri: http://auth-server:9000

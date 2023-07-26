@@ -1,6 +1,6 @@
 package org.example.springsecurityclient.Entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -47,4 +47,5 @@ public class VerificationToken {
         calendar.add(Calendar.MINUTE, expirationTime);
         return new Date(calendar.getTime().getTime());
     }
+
 }

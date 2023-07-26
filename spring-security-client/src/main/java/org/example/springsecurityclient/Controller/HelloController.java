@@ -23,7 +23,7 @@ public class HelloController {
 
     @GetMapping("/api/hello")
     public String hello(Principal principal) {
-        return "Hello " +principal.getName()+", Welcome to Daily Code Buffer!!";
+        return "Hello " +principal.getName()+", Welcome to the WebPage!!";
     }
 
     @GetMapping("/api/users")
@@ -38,5 +38,5 @@ public class HelloController {
                 .bodyToMono(String[].class)
                 .block();
     }
-
 }
+

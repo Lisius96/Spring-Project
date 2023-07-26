@@ -3,10 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/user-registration
+    url: jdbc:mysql://localhost:3306/user_registration
     username: root
-    #password: ellie&joel
-    password: SofiaMySQL
+    password: ellie&joel
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true

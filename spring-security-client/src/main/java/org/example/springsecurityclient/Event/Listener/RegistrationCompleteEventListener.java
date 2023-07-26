@@ -12,7 +12,8 @@ import java.util.UUID;
 
 @Component
 @Slf4j
-public class RegistrationCompleteEventListener implements ApplicationListener<RegistrationCompleteEvent> {
+public class RegistrationCompleteEventListener implements
+        ApplicationListener<RegistrationCompleteEvent> {
 
     @Autowired
     private UserService userService;
