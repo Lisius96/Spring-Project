@@ -14,11 +14,15 @@ public class ResourceServerConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .mvcMatchers("/api/**")
+                .mvcMatchers("/users")
+                .access("hasAuthority('SCOPE_api.read')")
+                .mvcMatchers("/managers")
                 .access("hasAuthority('SCOPE_api.read')")
                 .and()
                 .oauth2ResourceServer()
-                .jwt();
+                .jwt()
+                .jwtAuthenticationConverter(new CustomAuthenticationConverter());
         return http.build();
     }
+
 }

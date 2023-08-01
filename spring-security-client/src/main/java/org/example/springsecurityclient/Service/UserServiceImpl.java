@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService {
         user.setEmail(userModel.getEmail());
         user.setFirstName(userModel.getFirstName());
         user.setLastName(userModel.getLastName());
-        user.setRole("USER");
+        user.setRole(userModel.getRole());
         user.setPassword(passwordEncoder.encode(userModel.getPassword())); //conversione password plain inserita dall'utente in una cifrata
 
         userRepository.save(user);
